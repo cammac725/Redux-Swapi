@@ -20,7 +20,7 @@ export const charsReducer = (state = initialState, action) => {
         ...state,
         isLoading: false,
         error: '',
-        characters: action.payload
+        characters: action.payload.results
       }
 
     case FETCH_FAIL:
@@ -34,3 +34,5 @@ export const charsReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+// export default charsReducer;
